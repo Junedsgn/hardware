@@ -1,0 +1,58 @@
+.margin-45 {
+    color: white;
+    margin-bottom: 41px
+}
+
+.button {
+    height: 24px;
+    font-family: BRUTAL_TYPE;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #FAAF3F;
+    border-radius: 2px;
+    max-width: 118px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px;
+}
+
+.content__btn {
+    background: #FAAF3F;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.margin-right-42 {
+    margin-right: 42px;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    display: block;
+    height: 10px;
+    left: -5.3px;
+    top: 6px;
+    position: absolute;
+    width: 10px;
+    background: #828282;
+    border-radius: 50%;
+}
