@@ -1,7 +1,6 @@
 @font-face {
     font-weight: 400;
     font-family: "PT Sans Caption";
-    font-style: normal;
     font-display: swap;
     src: url("../fonts/PTSansCaptionRegular.woff2") format("woff2"), url("../fonts/PTSansCaptionRegular.woff") format("woff");
 }
@@ -56,16 +55,15 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-color: white;
 }
 
 /*Hardware styles start */
 .hardware{
     background: linear-gradient(360deg, #223036 0%, #223036 100%);
     display: flex;
-    padding-top: 46px;
-    padding-bottom: 35px;
     position: relative;
+    justify-content: space-between;
+    padding: 46px 68px 42px 47px;
 }
 
 .hardware_svg {
@@ -75,7 +73,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 47px;
 }
 
 .hardware_logo {
@@ -114,28 +111,21 @@ body {
 
 .hardware__text {
     font-family: PT_SANS_CAPTION;
-    font-style: normal;
     width: 658px;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: white;
-    position: relative;
-    margin-left: 56px;
-    bottom: 7px;
+    margin-top: -7px
 }
 
 .hardware__enter {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    color: white;
     position: absolute;
     right: 20px;
     top: 8px;
     display: flex;
-    text-align: right;
 }
 /*Hardware styles end */
 
@@ -146,6 +136,7 @@ body {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     align-items: center;
+    padding: 0 12px 0 45px;
 }
 .header__navigation {
     display: flex;
@@ -156,7 +147,6 @@ body {
 
 .header__navigation_item {
     font-family: BRUTAL_TYPE, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -166,13 +156,11 @@ body {
 .header__burger {
     width: 14px;
     height: 12px;
-    margin: 0 42px 0 47px;
 }
 
 .header__search {
     width: 15px;
     height: 14px;
-    margin: 0 12px 0 auto;
 }
 /*Header styles end */
 
@@ -183,14 +171,13 @@ main {
 
 .main__title {
     font-family: PT_SANS_CAPTION;
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 22px;
     position: relative;
-    top: 9px;
+    margin-top: 9px;
     color: black;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     letter-spacing: -0.02em;
 }
 
@@ -204,41 +191,21 @@ main {
     width: 100%;
 }
 
-.button {
-    height: 24px;
-    font-family: BRUTAL_TYPE;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    background-color: #FAAF3F;
-    border-radius: 2px;
-    color: white;
-    max-width: 118px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 10px;
-}
 
-.margin-45 {
-    margin-bottom: 41px
+.main__containers{
+    display: grid;
+    gap:25px;
+    margin-bottom: 30px;
 }
 
 .main__content__container {
     background: url("../img/notepad.png") no-repeat;
     height: 492px;
     padding: 150px 20px 30px 24px;
-    margin-bottom: 25px;
 }
 
 .main__content-title {
-    color: white;
     font-family: BRUTAL_TYPE;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -255,10 +222,7 @@ main {
 }
 
 .main__content-text {
-    max-width: 720px;
-    color: white;
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -276,14 +240,12 @@ main {
 
 .main__content-date {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 700;
     font-size: 10px;
 }
 
 .main__content-name {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     margin-right: 4px;
@@ -337,8 +299,6 @@ main {
     margin-right: 5px;
 }
 
-
-
 .statistics__item-svg {
     width: 16px;
     cursor: pointer;
@@ -368,7 +328,6 @@ main {
     max-width: 517px;
     width: 100%;
     padding: 85px 67px 30px 23px;
-    margin-bottom: 28px;
 }
 
 .medium_content .main__content-title, .medium_content .main__content-text {
@@ -381,10 +340,6 @@ main {
 }
 /* left medium styles end */
 /* left small styles start */
-.row {
-    display: flex;
-    justify-content: space-between;
-}
 
 .small__content {
     max-width: 247px;
@@ -408,17 +363,15 @@ main {
     gap: 16px;
 }
 
-
 /* left small styles end */
 /* left  styles start */
 .articles__text-today {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
     color: black;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 }
 
 .articles__text-today-bold {
@@ -439,7 +392,6 @@ main {
     align-items: center;
     position: relative;
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
@@ -502,7 +454,6 @@ main {
 .articles__best-item-text {
     flex-grow: 1;
     font-family: BRUTAL_TYPE;
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
@@ -526,7 +477,6 @@ main {
 
 .all__series-title {
     font-family: PT_SANS_CAPTION;
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 22px;
@@ -542,7 +492,6 @@ main {
 }
 
 .all__series .left-card {
-    width: 380px;
     padding: 32px 19px 19px 23px;
 }
 
@@ -571,8 +520,8 @@ main {
 
 .main__content_right {
     background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 19px 17px 19px 21px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 18px 17px 19px 21px;
 }
 
 .article__header {
@@ -597,7 +546,6 @@ main {
 
 .article__header-text {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #0776D2;
@@ -615,7 +563,12 @@ main {
 .content-list {
     border-left: 1px solid #828282;
     position: relative;
-    margin-top: 25px
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 21px;
 }
 .content-list:before {
     content: '' ;
@@ -625,7 +578,8 @@ main {
     height: 10px;
     width: 17px;
     position: absolute;
-    left: -6px;
+    left: -5px;
+    top: 0;
 }
 
 .content-list:after {
@@ -641,13 +595,11 @@ main {
 
 .content_element {
     position: relative;
-    margin: 16px 0 22px 0;
     padding-left: 16px;
 }
 
 .content-list-text {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
@@ -655,28 +607,6 @@ main {
     color: #333333;
 }
 
-.dot {
-    display: block;
-    height: 10px;
-    left: -5.3px;
-    top: 6px;
-    position: absolute;
-    width: 10px;
-    background: #828282;
-    border-radius: 50%;
-}
-
-.content__btn {
-    background: #FAAF3F;
-    border-radius: 2px;
-    border: none;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
 /* right 2 styles start */
 
  .main__content_right .video-pic {
@@ -699,16 +629,10 @@ main {
 
  .main__content-right-text {
      font-family: PT_SANS;
-     font-style: normal;
      font-weight: 700;
      font-size: 15px;
      line-height: 21px;
      color: black;
- }
-
- .content__right-section {
-     height: 273px;
-     width: 100%;
  }
 
 .play-svg {
@@ -718,7 +642,6 @@ main {
 /* right 3 styles start */
 .article__right-date {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 21px;
@@ -727,7 +650,6 @@ main {
 
 .article__right-time {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 35px;
@@ -736,7 +658,6 @@ main {
 
 .article-right-text {
     font-family: PT_SANS;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
@@ -752,8 +673,8 @@ main {
     letter-spacing: -0.02em;
 }
 
-.article-title {
-    flex-grow: 1;
+.main__content-pic .article-title {
+    flex-grow: 1
 }
 
 .main__content-pic {

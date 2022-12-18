@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/normalize.min.css">
+    <link rel="stylesheet" href="./styles/commonStyles.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>HARDWARE.</title>
 </head>
@@ -123,7 +124,7 @@
     <!--/hardware -->
     <!--header -->
     <header class="header">
-        <svg class="header__burger">
+        <svg class="header__burger margin-right-42">
             <use xlink:href="#burger"></use>
         </svg>
         <ul class="header__navigation">
@@ -133,7 +134,7 @@
             <li class="header__navigation_item">Серии</li>
             <li class="header__navigation_item">Рубрики</li>
         </ul>
-        <svg class="header__search">
+        <svg class="header__search margin-left-auto">
             <use xlink:href="#search"></use>
         </svg>
     </header>
@@ -143,6 +144,7 @@
         <div class="main__title">Сегодня в выпуске</div>
         <div class="main__content">
             <div class="main__content-leftSide">
+                <div class="main__containers">
                 <div class="main__content__container">
                     <button class="button margin-45">Сделай сам</button>
                     <p class="main__content-title">Блокнот с осциллографом и генератором частот (звуковой картой)</p>
@@ -225,6 +227,7 @@
                         </div>
                     </div>
 
+
                     <div class="main__content__container small__content">
                         <button class="button margin-45">ЖЕЛЕЗО</button>
                         <p class="main__content-title small-title">Кластер Elasticsearch на 200 ТБ+</p>
@@ -260,11 +263,10 @@
                                     <div class="statistics__item-text">678</div>
                                 </div>
                             </div>
-                        </div>
-
                     </div>
                 </div>
-
+                </div>
+</div>
                 <div>
                     <div class="articles__text-today">На сегодня это всё! Приходите завтра почитать
                         <span class="articles__text-today-bold">об эффективной работе из дома,  о том как Crash </br> Bandicoot взламывал Playstation, о том с чего начиналось IT и об анатомии таблиц LuaJIT и особенностях их использования.
@@ -520,7 +522,7 @@
                     <button class="content__btn">Пройти тест</button>
                 </div>
 
-                <div class="content__right-section">
+                <div>
                     <div class="main__content_right video-item">
                         <div class="article__header">
                             <button class="article__btn">ВИДЕО</button>
@@ -535,7 +537,7 @@
                     </div>
                 </div>
 
-                <div class="content__right-section">
+                <div>
                     <div class="main__content_right">
                         <div class="article__header">
                             <button class="article__btn right-btn">НАДЫСЬ</button>
@@ -548,6 +550,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 </div>
 <!-- /body -->
